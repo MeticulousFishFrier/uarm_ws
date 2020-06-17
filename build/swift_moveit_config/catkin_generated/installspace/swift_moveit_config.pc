@@ -1,0 +1,8 @@
+prefix=/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install
+
+Name: swift_moveit_config
+Description: Description of swift_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
