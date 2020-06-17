@@ -1,4 +1,4 @@
-prefix=/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install
+prefix=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/install
 
 Name: pro_moveit_config
 Description: Description of pro_moveit_config

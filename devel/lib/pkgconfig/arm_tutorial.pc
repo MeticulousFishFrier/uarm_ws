@@ -1,4 +1,4 @@
-prefix=/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel
+prefix=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel
 
 Name: arm_tutorial
 Description: Description of arm_tutorial

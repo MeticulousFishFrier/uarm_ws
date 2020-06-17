@@ -67,14 +67,14 @@ set(swift_moveit_config_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(swift_moveit_config_SOURCE_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/swift_moveit_config)
-  set(swift_moveit_config_DEVEL_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel)
+  set(swift_moveit_config_SOURCE_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swift_moveit_config)
+  set(swift_moveit_config_DEVEL_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel)
   set(swift_moveit_config_INSTALL_PREFIX "")
   set(swift_moveit_config_PREFIX ${swift_moveit_config_DEVEL_PREFIX})
 else()
   set(swift_moveit_config_SOURCE_PREFIX "")
   set(swift_moveit_config_DEVEL_PREFIX "")
-  set(swift_moveit_config_INSTALL_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install)
+  set(swift_moveit_config_INSTALL_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/install)
   set(swift_moveit_config_PREFIX ${swift_moveit_config_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/install/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

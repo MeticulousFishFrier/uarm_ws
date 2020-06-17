@@ -1,0 +1,14 @@
+<launch>
+	<param name="robot_description" command="cat $(find swiftpro)/urdf/pro_model.xacro" />
+	<param name="use_gui" value= "True" />
+
+
+	<!-- Joint Values -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+	<!-- Show in rviz -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find swiftpro)/rviz/uarmProConfig.rviz"  />
+
+</launch>

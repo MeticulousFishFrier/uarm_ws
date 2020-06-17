@@ -67,14 +67,14 @@ set(swiftpro_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(swiftpro_SOURCE_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro)
-  set(swiftpro_DEVEL_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel)
+  set(swiftpro_SOURCE_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro)
+  set(swiftpro_DEVEL_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel)
   set(swiftpro_INSTALL_PREFIX "")
   set(swiftpro_PREFIX ${swiftpro_DEVEL_PREFIX})
 else()
   set(swiftpro_SOURCE_PREFIX "")
   set(swiftpro_DEVEL_PREFIX "")
-  set(swiftpro_INSTALL_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install)
+  set(swiftpro_INSTALL_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/install)
   set(swiftpro_PREFIX ${swiftpro_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/install/lib;/home/xueyelin/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro/src/swiftpro_rviz_node.cpp" "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/swiftpro_rviz_node.dir/src/swiftpro_rviz_node.cpp.o"
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro/src/swiftpro_rviz_node.cpp" "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/swiftpro_rviz_node.dir/src/swiftpro_rviz_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,10 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/include"
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro/include/swiftpro"
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro/include/swiftpro"
   )
 
 # Targets to which this target links.

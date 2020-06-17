@@ -67,14 +67,14 @@ set(swiftpro_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(swiftpro_SOURCE_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro)
-  set(swiftpro_DEVEL_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel)
+  set(swiftpro_SOURCE_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro)
+  set(swiftpro_DEVEL_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel)
   set(swiftpro_INSTALL_PREFIX "")
   set(swiftpro_PREFIX ${swiftpro_DEVEL_PREFIX})
 else()
   set(swiftpro_SOURCE_PREFIX "")
   set(swiftpro_DEVEL_PREFIX "")
-  set(swiftpro_INSTALL_PREFIX /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install)
+  set(swiftpro_INSTALL_PREFIX /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/install)
   set(swiftpro_PREFIX ${swiftpro_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(swiftpro_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/include " STREQUAL " ")
+if(NOT "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include " STREQUAL " ")
   set(swiftpro_INCLUDE_DIRS "")
-  set(_include_dirs "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/include")
+  set(_include_dirs "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/inclu
         message(FATAL_ERROR "Project 'swiftpro' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'swiftpro' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'swiftpro' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/${idir}'.  ${_report}")
     endif()
     _list_append_unique(swiftpro_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

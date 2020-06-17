@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/include/swiftpro/position.h
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/position.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro/src/swiftpro_moveit_node.cpp
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro/src/swiftpro_moveit_node.cpp
 string
 -
 ros/ros.h

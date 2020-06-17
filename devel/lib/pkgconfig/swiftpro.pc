@@ -1,8 +1,8 @@
-prefix=/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel
+prefix=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel
 
 Name: swiftpro
 Description: Description of swiftpro
 Version: 0.0.0
-Cflags: -I/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/include
+Cflags: -I/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include
 Libs: -L${prefix}/lib -lswiftpro
 Requires: roscpp rospy std_msgs tf sensor_msgs message_runtime

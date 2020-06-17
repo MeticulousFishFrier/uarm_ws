@@ -7,8 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/lib:$LD_LIBRARY_PATH"
-export PWD="/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build"
+export PYTHONPATH="/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROS_PACKAGE_PATH="/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src:$ROS_PACKAGE_PATH"

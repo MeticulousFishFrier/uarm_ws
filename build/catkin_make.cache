@@ -1,2 +1,2 @@
-RosForSwiftAndSwiftPro/swiftpro:arm_tutorial:beginner_tutorials:pro_moveit_config:swift_moveit_config
--DCATKIN_DEVEL_PREFIX=/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/install -G Unix Makefiles
+arm_tutorial:beginner_tutorials:pro_moveit_config:swift_moveit_config:swiftpro
+-DCATKIN_DEVEL_PREFIX=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/install -G Unix Makefiles

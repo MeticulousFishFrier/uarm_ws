@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src"
+CMAKE_SOURCE_DIR = /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build"
+CMAKE_BINARY_DIR = /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build
 
 # Utility rule file for actionlib_generate_messages_py.
 
@@ -63,10 +63,10 @@ RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/bu
 .PHONY : RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/build
 
 RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/clean:
-	cd "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro" && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/clean
 
 RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/depend:
-	cd "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src" "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro" "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build" "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro" "/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/RosForSwiftAndSwiftPro/swiftpro /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : RosForSwiftAndSwiftPro/swiftpro/CMakeFiles/actionlib_generate_messages_py.dir/depend
 

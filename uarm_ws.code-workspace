@@ -8,6 +8,9 @@
 		"python.autoComplete.extraPaths": [
 			"/home/xueyelin/Documents/Thermite Boom Boom/Code/ROS/uarm_ws/devel/lib/python2.7/dist-packages",
 			"/opt/ros/melodic/lib/python2.7/dist-packages"
+		],
+		"favorites.resources": [
+			"src/RosForSwiftAndSwiftPro/swiftpro/src"
 		]
 	}
 }
