@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/SwiftproState.msg;/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/position.msg;/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg;/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/status.msg"
+messages_str = "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/SwiftproState.msg;/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/position.msg;/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg;/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/status.msg;/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg"
 services_str = ""
 pkg_name = "swiftpro"
 dependencies_str = "std_msgs"

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/position.js"
   "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/SwiftproState.js"
   "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/angle4th.js"
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/gcode.js"
 )
 
 # Per-language clean rules from dependency scanning.

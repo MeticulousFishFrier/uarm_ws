@@ -57,6 +57,7 @@ swiftpro/CMakeFiles/swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Th
 swiftpro/CMakeFiles/swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/position.lisp
 swiftpro/CMakeFiles/swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/SwiftproState.lisp
 swiftpro/CMakeFiles/swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/angle4th.lisp
+swiftpro/CMakeFiles/swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/gcode.lisp
 
 
 /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/status.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
@@ -79,11 +80,17 @@ swiftpro/CMakeFiles/swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Th
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from swiftpro/angle4th.msg"
 	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg -Iswiftpro:/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg
 
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/gcode.lisp: /opt/ros/melodic/lib/genlisp/gen_lisp.py
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/gcode.lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from swiftpro/gcode.msg"
+	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg -Iswiftpro:/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg
+
 swiftpro_generate_messages_lisp: swiftpro/CMakeFiles/swiftpro_generate_messages_lisp
 swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/status.lisp
 swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/position.lisp
 swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/SwiftproState.lisp
 swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/angle4th.lisp
+swiftpro_generate_messages_lisp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/gcode.lisp
 swiftpro_generate_messages_lisp: swiftpro/CMakeFiles/swiftpro_generate_messages_lisp.dir/build.make
 
 .PHONY : swiftpro_generate_messages_lisp

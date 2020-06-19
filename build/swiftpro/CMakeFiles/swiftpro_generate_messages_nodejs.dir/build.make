@@ -57,6 +57,7 @@ swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/
 swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/position.js
 swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/SwiftproState.js
 swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/angle4th.js
+swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/gcode.js
 
 
 /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/status.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
@@ -79,11 +80,17 @@ swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from swiftpro/angle4th.msg"
 	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg -Iswiftpro:/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg
 
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/gcode.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/gcode.js: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from swiftpro/gcode.msg"
+	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/swiftpro && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg -Iswiftpro:/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg
+
 swiftpro_generate_messages_nodejs: swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs
 swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/status.js
 swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/position.js
 swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/SwiftproState.js
 swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/angle4th.js
+swiftpro_generate_messages_nodejs: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/gennodejs/ros/swiftpro/msg/gcode.js
 swiftpro_generate_messages_nodejs: swiftpro/CMakeFiles/swiftpro_generate_messages_nodejs.dir/build.make
 
 .PHONY : swiftpro_generate_messages_nodejs

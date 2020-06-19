@@ -5,6 +5,8 @@
    "SWIFTPROSTATE"
    "<ANGLE4TH>"
    "ANGLE4TH"
+   "<GCODE>"
+   "GCODE"
    "<POSITION>"
    "POSITION"
    "<STATUS>"

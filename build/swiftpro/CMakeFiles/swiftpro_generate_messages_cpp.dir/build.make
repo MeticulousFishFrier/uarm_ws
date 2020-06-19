@@ -57,6 +57,7 @@ swiftpro/CMakeFiles/swiftpro_generate_messages_cpp: /home/xueyelin/Documents/The
 swiftpro/CMakeFiles/swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/position.h
 swiftpro/CMakeFiles/swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/SwiftproState.h
 swiftpro/CMakeFiles/swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/angle4th.h
+swiftpro/CMakeFiles/swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/gcode.h
 
 
 /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/status.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
@@ -83,11 +84,18 @@ swiftpro/CMakeFiles/swiftpro_generate_messages_cpp: /home/xueyelin/Documents/The
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from swiftpro/angle4th.msg"
 	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro && /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg -Iswiftpro:/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/gcode.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/gcode.h: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg
+/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/gcode.h: /opt/ros/melodic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from swiftpro/gcode.msg"
+	cd /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro && /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg -Iswiftpro:/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p swiftpro -o /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro -e /opt/ros/melodic/share/gencpp/cmake/..
+
 swiftpro_generate_messages_cpp: swiftpro/CMakeFiles/swiftpro_generate_messages_cpp
 swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/status.h
 swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/position.h
 swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/SwiftproState.h
 swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/angle4th.h
+swiftpro_generate_messages_cpp: /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/include/swiftpro/gcode.h
 swiftpro_generate_messages_cpp: swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/build.make
 
 .PHONY : swiftpro_generate_messages_cpp

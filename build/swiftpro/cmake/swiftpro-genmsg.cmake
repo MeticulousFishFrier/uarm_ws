@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "swiftpro: 4 messages, 0 services")
+message(STATUS "swiftpro: 5 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iswiftpro:/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -37,6 +37,11 @@ add_custom_target(_swiftpro_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swiftpro" "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg" ""
 )
 
+get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg" NAME_WE)
+add_custom_target(_swiftpro_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "swiftpro" "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
@@ -67,6 +72,12 @@ _generate_msg_cpp(swiftpro
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/swiftpro
 )
+_generate_msg_cpp(swiftpro
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/swiftpro
+)
 
 ### Generating Services
 
@@ -89,6 +100,8 @@ add_dependencies(swiftpro_generate_messages_cpp _swiftpro_generate_messages_chec
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/SwiftproState.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_cpp _swiftpro_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg" NAME_WE)
+add_dependencies(swiftpro_generate_messages_cpp _swiftpro_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_cpp _swiftpro_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -124,6 +137,12 @@ _generate_msg_eus(swiftpro
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/swiftpro
 )
+_generate_msg_eus(swiftpro
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/swiftpro
+)
 
 ### Generating Services
 
@@ -146,6 +165,8 @@ add_dependencies(swiftpro_generate_messages_eus _swiftpro_generate_messages_chec
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/SwiftproState.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_eus _swiftpro_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg" NAME_WE)
+add_dependencies(swiftpro_generate_messages_eus _swiftpro_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_eus _swiftpro_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -181,6 +202,12 @@ _generate_msg_lisp(swiftpro
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/swiftpro
 )
+_generate_msg_lisp(swiftpro
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/swiftpro
+)
 
 ### Generating Services
 
@@ -203,6 +230,8 @@ add_dependencies(swiftpro_generate_messages_lisp _swiftpro_generate_messages_che
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/SwiftproState.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_lisp _swiftpro_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg" NAME_WE)
+add_dependencies(swiftpro_generate_messages_lisp _swiftpro_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_lisp _swiftpro_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -238,6 +267,12 @@ _generate_msg_nodejs(swiftpro
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/swiftpro
 )
+_generate_msg_nodejs(swiftpro
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/swiftpro
+)
 
 ### Generating Services
 
@@ -260,6 +295,8 @@ add_dependencies(swiftpro_generate_messages_nodejs _swiftpro_generate_messages_c
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/SwiftproState.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_nodejs _swiftpro_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg" NAME_WE)
+add_dependencies(swiftpro_generate_messages_nodejs _swiftpro_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_nodejs _swiftpro_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -295,6 +332,12 @@ _generate_msg_py(swiftpro
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/swiftpro
 )
+_generate_msg_py(swiftpro
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/swiftpro
+)
 
 ### Generating Services
 
@@ -317,6 +360,8 @@ add_dependencies(swiftpro_generate_messages_py _swiftpro_generate_messages_check
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/SwiftproState.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_py _swiftpro_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/angle4th.msg" NAME_WE)
+add_dependencies(swiftpro_generate_messages_py _swiftpro_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/src/swiftpro/msg/gcode.msg" NAME_WE)
 add_dependencies(swiftpro_generate_messages_py _swiftpro_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

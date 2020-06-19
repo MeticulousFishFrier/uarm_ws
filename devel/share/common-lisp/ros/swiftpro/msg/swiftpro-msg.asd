@@ -8,6 +8,8 @@
     (:file "_package_SwiftproState" :depends-on ("_package"))
     (:file "angle4th" :depends-on ("_package_angle4th"))
     (:file "_package_angle4th" :depends-on ("_package"))
+    (:file "gcode" :depends-on ("_package_gcode"))
+    (:file "_package_gcode" :depends-on ("_package"))
     (:file "position" :depends-on ("_package_position"))
     (:file "_package_position" :depends-on ("_package"))
     (:file "status" :depends-on ("_package_status"))

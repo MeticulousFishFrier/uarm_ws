@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/position.lisp"
   "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/SwiftproState.lisp"
   "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/angle4th.lisp"
+  "/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/devel/share/common-lisp/ros/swiftpro/msg/gcode.lisp"
 )
 
 # Per-language clean rules from dependency scanning.
