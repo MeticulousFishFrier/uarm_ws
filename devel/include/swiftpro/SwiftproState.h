@@ -33,7 +33,8 @@ struct SwiftproState_
     , z(0.0)
     , pump(0)
     , swiftpro_status(0)
-    , gripper(0)  {
+    , gripper(0)
+    , busy(false)  {
     }
   SwiftproState_(const ContainerAllocator& _alloc)
     : motor_angle1(0.0)
@@ -45,7 +46,8 @@ struct SwiftproState_
     , z(0.0)
     , pump(0)
     , swiftpro_status(0)
-    , gripper(0)  {
+    , gripper(0)
+    , busy(false)  {
   (void)_alloc;
     }
 
@@ -80,6 +82,9 @@ struct SwiftproState_
 
    typedef uint8_t _gripper_type;
   _gripper_type gripper;
+
+   typedef uint8_t _busy_type;
+  _busy_type busy;
 
 
 
@@ -119,7 +124,8 @@ bool operator==(const ::swiftpro::SwiftproState_<ContainerAllocator1> & lhs, con
     lhs.z == rhs.z &&
     lhs.pump == rhs.pump &&
     lhs.swiftpro_status == rhs.swiftpro_status &&
-    lhs.gripper == rhs.gripper;
+    lhs.gripper == rhs.gripper &&
+    lhs.busy == rhs.busy;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -176,12 +182,12 @@ struct MD5Sum< ::swiftpro::SwiftproState_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "bcd9671f860a15ba5765d673098d21bb";
+    return "9ba8509bd2b2c039f3239b4017aa5a8a";
   }
 
   static const char* value(const ::swiftpro::SwiftproState_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xbcd9671f860a15baULL;
-  static const uint64_t static_value2 = 0x5765d673098d21bbULL;
+  static const uint64_t static_value1 = 0x9ba8509bd2b2c039ULL;
+  static const uint64_t static_value2 = 0xf3239b4017aa5a8aULL;
 };
 
 template<class ContainerAllocator>
@@ -210,7 +216,7 @@ struct Definition< ::swiftpro::SwiftproState_<ContainerAllocator> >
 "uint8 	pump\n"
 "uint8 	swiftpro_status\n"
 "uint8 	gripper\n"
-"\n"
+"bool    busy\n"
 ;
   }
 
@@ -239,6 +245,7 @@ namespace serialization
       stream.next(m.pump);
       stream.next(m.swiftpro_status);
       stream.next(m.gripper);
+      stream.next(m.busy);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -277,6 +284,8 @@ struct Printer< ::swiftpro::SwiftproState_<ContainerAllocator> >
     Printer<uint8_t>::stream(s, indent + "  ", v.swiftpro_status);
     s << indent << "gripper: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.gripper);
+    s << indent << "busy: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.busy);
   }
 };
 

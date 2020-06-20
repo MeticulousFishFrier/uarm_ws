@@ -7,7 +7,7 @@ import struct
 
 
 class SwiftproState(genpy.Message):
-  _md5sum = "bcd9671f860a15ba5765d673098d21bb"
+  _md5sum = "9ba8509bd2b2c039f3239b4017aa5a8a"
   _type = "swiftpro/SwiftproState"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """float64 motor_angle1
@@ -20,10 +20,9 @@ float64 z
 uint8 	pump
 uint8 	swiftpro_status
 uint8 	gripper
-
-"""
-  __slots__ = ['motor_angle1','motor_angle2','motor_angle3','motor_angle4','x','y','z','pump','swiftpro_status','gripper']
-  _slot_types = ['float64','float64','float64','float64','float64','float64','float64','uint8','uint8','uint8']
+bool    busy"""
+  __slots__ = ['motor_angle1','motor_angle2','motor_angle3','motor_angle4','x','y','z','pump','swiftpro_status','gripper','busy']
+  _slot_types = ['float64','float64','float64','float64','float64','float64','float64','uint8','uint8','uint8','bool']
 
   def __init__(self, *args, **kwds):
     """
@@ -33,7 +32,7 @@ uint8 	gripper
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       motor_angle1,motor_angle2,motor_angle3,motor_angle4,x,y,z,pump,swiftpro_status,gripper
+       motor_angle1,motor_angle2,motor_angle3,motor_angle4,x,y,z,pump,swiftpro_status,gripper,busy
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -62,6 +61,8 @@ uint8 	gripper
         self.swiftpro_status = 0
       if self.gripper is None:
         self.gripper = 0
+      if self.busy is None:
+        self.busy = False
     else:
       self.motor_angle1 = 0.
       self.motor_angle2 = 0.
@@ -73,6 +74,7 @@ uint8 	gripper
       self.pump = 0
       self.swiftpro_status = 0
       self.gripper = 0
+      self.busy = False
 
   def _get_types(self):
     """
@@ -87,7 +89,7 @@ uint8 	gripper
     """
     try:
       _x = self
-      buff.write(_get_struct_7d3B().pack(_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper))
+      buff.write(_get_struct_7d4B().pack(_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper, _x.busy))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -100,8 +102,9 @@ uint8 	gripper
       end = 0
       _x = self
       start = end
-      end += 59
-      (_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper,) = _get_struct_7d3B().unpack(str[start:end])
+      end += 60
+      (_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper, _x.busy,) = _get_struct_7d4B().unpack(str[start:end])
+      self.busy = bool(self.busy)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -115,7 +118,7 @@ uint8 	gripper
     """
     try:
       _x = self
-      buff.write(_get_struct_7d3B().pack(_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper))
+      buff.write(_get_struct_7d4B().pack(_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper, _x.busy))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -129,8 +132,9 @@ uint8 	gripper
       end = 0
       _x = self
       start = end
-      end += 59
-      (_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper,) = _get_struct_7d3B().unpack(str[start:end])
+      end += 60
+      (_x.motor_angle1, _x.motor_angle2, _x.motor_angle3, _x.motor_angle4, _x.x, _x.y, _x.z, _x.pump, _x.swiftpro_status, _x.gripper, _x.busy,) = _get_struct_7d4B().unpack(str[start:end])
+      self.busy = bool(self.busy)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -139,9 +143,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_7d3B = None
-def _get_struct_7d3B():
-    global _struct_7d3B
-    if _struct_7d3B is None:
-        _struct_7d3B = struct.Struct("<7d3B")
-    return _struct_7d3B
+_struct_7d4B = None
+def _get_struct_7d4B():
+    global _struct_7d4B
+    if _struct_7d4B is None:
+        _struct_7d4B = struct.Struct("<7d4B")
+    return _struct_7d4B

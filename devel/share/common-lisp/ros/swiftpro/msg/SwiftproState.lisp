@@ -56,7 +56,12 @@
     :reader gripper
     :initarg :gripper
     :type cl:fixnum
-    :initform 0))
+    :initform 0)
+   (busy
+    :reader busy
+    :initarg :busy
+    :type cl:boolean
+    :initform cl:nil))
 )
 
 (cl:defclass SwiftproState (<SwiftproState>)
@@ -116,6 +121,11 @@
 (cl:defmethod gripper-val ((m <SwiftproState>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader swiftpro-msg:gripper-val is deprecated.  Use swiftpro-msg:gripper instead.")
   (gripper m))
+
+(cl:ensure-generic-function 'busy-val :lambda-list '(m))
+(cl:defmethod busy-val ((m <SwiftproState>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader swiftpro-msg:busy-val is deprecated.  Use swiftpro-msg:busy instead.")
+  (busy m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <SwiftproState>) ostream)
   "Serializes a message object of type '<SwiftproState>"
   (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'motor_angle1))))
@@ -184,6 +194,7 @@
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'pump)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'swiftpro_status)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'gripper)) ostream)
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'busy) 1 0)) ostream)
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <SwiftproState>) istream)
   "Deserializes a message object of type '<SwiftproState>"
@@ -260,6 +271,7 @@
     (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'pump)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'swiftpro_status)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 0) (cl:slot-value msg 'gripper)) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'busy) (cl:not (cl:zerop (cl:read-byte istream))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<SwiftproState>)))
@@ -270,16 +282,16 @@
   "swiftpro/SwiftproState")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<SwiftproState>)))
   "Returns md5sum for a message object of type '<SwiftproState>"
-  "bcd9671f860a15ba5765d673098d21bb")
+  "9ba8509bd2b2c039f3239b4017aa5a8a")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'SwiftproState)))
   "Returns md5sum for a message object of type 'SwiftproState"
-  "bcd9671f860a15ba5765d673098d21bb")
+  "9ba8509bd2b2c039f3239b4017aa5a8a")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<SwiftproState>)))
   "Returns full string definition for message of type '<SwiftproState>"
-  (cl:format cl:nil "float64 motor_angle1~%float64 motor_angle2~%float64 motor_angle3~%float64 motor_angle4~%float64 x~%float64 y~%float64 z~%uint8 	pump~%uint8 	swiftpro_status~%uint8 	gripper~%~%~%~%"))
+  (cl:format cl:nil "float64 motor_angle1~%float64 motor_angle2~%float64 motor_angle3~%float64 motor_angle4~%float64 x~%float64 y~%float64 z~%uint8 	pump~%uint8 	swiftpro_status~%uint8 	gripper~%bool    busy~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'SwiftproState)))
   "Returns full string definition for message of type 'SwiftproState"
-  (cl:format cl:nil "float64 motor_angle1~%float64 motor_angle2~%float64 motor_angle3~%float64 motor_angle4~%float64 x~%float64 y~%float64 z~%uint8 	pump~%uint8 	swiftpro_status~%uint8 	gripper~%~%~%~%"))
+  (cl:format cl:nil "float64 motor_angle1~%float64 motor_angle2~%float64 motor_angle3~%float64 motor_angle4~%float64 x~%float64 y~%float64 z~%uint8 	pump~%uint8 	swiftpro_status~%uint8 	gripper~%bool    busy~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <SwiftproState>))
   (cl:+ 0
      8
@@ -289,6 +301,7 @@
      8
      8
      8
+     1
      1
      1
      1
@@ -306,4 +319,5 @@
     (cl:cons ':pump (pump msg))
     (cl:cons ':swiftpro_status (swiftpro_status msg))
     (cl:cons ':gripper (gripper msg))
+    (cl:cons ':busy (busy msg))
 ))

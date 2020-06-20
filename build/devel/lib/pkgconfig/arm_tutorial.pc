@@ -1,0 +1,8 @@
+prefix=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/devel
+
+Name: arm_tutorial
+Description: Description of arm_tutorial
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -28,6 +28,7 @@ class SwiftproState {
       this.pump = null;
       this.swiftpro_status = null;
       this.gripper = null;
+      this.busy = null;
     }
     else {
       if (initObj.hasOwnProperty('motor_angle1')) {
@@ -90,6 +91,12 @@ class SwiftproState {
       else {
         this.gripper = 0;
       }
+      if (initObj.hasOwnProperty('busy')) {
+        this.busy = initObj.busy
+      }
+      else {
+        this.busy = false;
+      }
     }
   }
 
@@ -115,6 +122,8 @@ class SwiftproState {
     bufferOffset = _serializer.uint8(obj.swiftpro_status, buffer, bufferOffset);
     // Serialize message field [gripper]
     bufferOffset = _serializer.uint8(obj.gripper, buffer, bufferOffset);
+    // Serialize message field [busy]
+    bufferOffset = _serializer.bool(obj.busy, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -142,11 +151,13 @@ class SwiftproState {
     data.swiftpro_status = _deserializer.uint8(buffer, bufferOffset);
     // Deserialize message field [gripper]
     data.gripper = _deserializer.uint8(buffer, bufferOffset);
+    // Deserialize message field [busy]
+    data.busy = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 59;
+    return 60;
   }
 
   static datatype() {
@@ -156,7 +167,7 @@ class SwiftproState {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return 'bcd9671f860a15ba5765d673098d21bb';
+    return '9ba8509bd2b2c039f3239b4017aa5a8a';
   }
 
   static messageDefinition() {
@@ -172,8 +183,7 @@ class SwiftproState {
     uint8 	pump
     uint8 	swiftpro_status
     uint8 	gripper
-    
-    
+    bool    busy
     `;
   }
 
@@ -251,6 +261,13 @@ class SwiftproState {
     }
     else {
       resolved.gripper = 0
+    }
+
+    if (msg.busy !== undefined) {
+      resolved.busy = msg.busy;
+    }
+    else {
+      resolved.busy = false
     }
 
     return resolved;

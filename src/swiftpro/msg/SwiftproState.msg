@@ -8,4 +8,4 @@ float64 z
 uint8 	pump
 uint8 	swiftpro_status
 uint8 	gripper
-
+bool    busy

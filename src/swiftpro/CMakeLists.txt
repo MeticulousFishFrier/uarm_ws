@@ -165,8 +165,8 @@ add_dependencies(swiftpro_write_node swiftpro_generate_messages_cpp)
 add_dependencies(swiftpro_moveit_node swiftpro_generate_messages_cpp)
 add_dependencies(swiftpro_rviz_node swiftpro_generate_messages_cpp)
 add_dependencies(swiftpro_read_node swiftpro_generate_messages_cpp)
-add_dependencies(swiftpro_write_gcode_node src/swiftpro_write_gcode_node.cpp)
-add_dependencies(swiftpro_read_gcode_node src/swiftpro_read_gcode_node.cpp)
+add_dependencies(swiftpro_write_gcode_node swiftpro_generate_messages_cpp)
+add_dependencies(swiftpro_read_gcode_node swiftpro_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node

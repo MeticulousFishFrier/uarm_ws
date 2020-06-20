@@ -995,7 +995,7 @@ swiftpro/preinstall:
 # Target rules for target swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir
 
 # All Build rule for target.
-swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/all:
+swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/all: swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/all
 	$(MAKE) -f swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/build.make swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/depend
 	$(MAKE) -f swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/build.make swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=41,42 "Built target swiftpro_read_gcode_node"
@@ -1008,7 +1008,7 @@ all: swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/all
 
 # Build rule for subdir invocation for target.
 swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles 0
 .PHONY : swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/rule
@@ -1032,7 +1032,7 @@ clean: swiftpro/CMakeFiles/swiftpro_read_gcode_node.dir/clean
 # Target rules for target swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir
 
 # All Build rule for target.
-swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/all:
+swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/all: swiftpro/CMakeFiles/swiftpro_generate_messages_cpp.dir/all
 	$(MAKE) -f swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/build.make swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/depend
 	$(MAKE) -f swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/build.make swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles --progress-num=47,48 "Built target swiftpro_write_gcode_node"
@@ -1045,7 +1045,7 @@ all: swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/all
 
 # Build rule for subdir invocation for target.
 swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/CMakeFiles 0
 .PHONY : swiftpro/CMakeFiles/swiftpro_write_gcode_node.dir/rule

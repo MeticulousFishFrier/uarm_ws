@@ -40,6 +40,8 @@ void position_write_callback(const swiftpro::position& msg)
 	ROS_INFO("%s", Gcode.c_str());
 	_serial.write(Gcode.c_str());
 	result.data = _serial.read(_serial.available());
+	ROS_INFO("serial wrote %s",result.data.c_str());
+
 }
 
 

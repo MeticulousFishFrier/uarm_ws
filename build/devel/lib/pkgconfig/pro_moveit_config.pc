@@ -1,0 +1,8 @@
+prefix=/home/xueyelin/Documents/Thermite_Boom_Boom/Code/ROS/uarm_ws/build/devel
+
+Name: pro_moveit_config
+Description: Description of pro_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

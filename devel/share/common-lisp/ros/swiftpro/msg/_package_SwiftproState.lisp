@@ -19,4 +19,6 @@
           SWIFTPRO_STATUS
           GRIPPER-VAL
           GRIPPER
+          BUSY-VAL
+          BUSY
 ))

@@ -14,7 +14,7 @@
 
 (defclass swiftpro::SwiftproState
   :super ros::object
-  :slots (_motor_angle1 _motor_angle2 _motor_angle3 _motor_angle4 _x _y _z _pump _swiftpro_status _gripper ))
+  :slots (_motor_angle1 _motor_angle2 _motor_angle3 _motor_angle4 _x _y _z _pump _swiftpro_status _gripper _busy ))
 
 (defmethod swiftpro::SwiftproState
   (:init
@@ -29,6 +29,7 @@
     ((:pump __pump) 0)
     ((:swiftpro_status __swiftpro_status) 0)
     ((:gripper __gripper) 0)
+    ((:busy __busy) nil)
     )
    (send-super :init)
    (setq _motor_angle1 (float __motor_angle1))
@@ -41,6 +42,7 @@
    (setq _pump (round __pump))
    (setq _swiftpro_status (round __swiftpro_status))
    (setq _gripper (round __gripper))
+   (setq _busy __busy)
    self)
   (:motor_angle1
    (&optional __motor_angle1)
@@ -72,6 +74,9 @@
   (:gripper
    (&optional __gripper)
    (if __gripper (setq _gripper __gripper)) _gripper)
+  (:busy
+   (&optional __busy)
+   (if __busy (setq _busy __busy)) _busy)
   (:serialization-length
    ()
    (+
@@ -94,6 +99,8 @@
     ;; uint8 _swiftpro_status
     1
     ;; uint8 _gripper
+    1
+    ;; bool _busy
     1
     ))
   (:serialize
@@ -120,6 +127,8 @@
        (write-byte _swiftpro_status s)
      ;; uint8 _gripper
        (write-byte _gripper s)
+     ;; bool _busy
+       (if _busy (write-byte -1 s) (write-byte 0 s))
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -144,11 +153,13 @@
      (setq _swiftpro_status (sys::peek buf ptr- :char)) (incf ptr- 1)
    ;; uint8 _gripper
      (setq _gripper (sys::peek buf ptr- :char)) (incf ptr- 1)
+   ;; bool _busy
+     (setq _busy (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
    ;;
    self)
   )
 
-(setf (get swiftpro::SwiftproState :md5sum-) "bcd9671f860a15ba5765d673098d21bb")
+(setf (get swiftpro::SwiftproState :md5sum-) "9ba8509bd2b2c039f3239b4017aa5a8a")
 (setf (get swiftpro::SwiftproState :datatype-) "swiftpro/SwiftproState")
 (setf (get swiftpro::SwiftproState :definition-)
       "float64 motor_angle1
@@ -161,12 +172,11 @@ float64 z
 uint8 	pump
 uint8 	swiftpro_status
 uint8 	gripper
-
-
+bool    busy
 ")
 
 
 
-(provide :swiftpro/SwiftproState "bcd9671f860a15ba5765d673098d21bb")
+(provide :swiftpro/SwiftproState "9ba8509bd2b2c039f3239b4017aa5a8a")
 
 
